@@ -1,4 +1,4 @@
-/*general styles*/
+/*--------------------------------------------general styles*/
 
 :root
 {
@@ -22,7 +22,7 @@ body
     background-color: var(--mid);
 }
 
-/*header styles*/
+/*--------------------------------------------header styles*/
 
 header
 {
@@ -49,6 +49,7 @@ header h1
 {
    margin: 5px 10px 5px auto;
    font-size: 25px;
+   color: var(--dark);
 }
 
 header nav ul
@@ -69,7 +70,36 @@ header nav ul li a
     border-bottom: 3px solid;
 }
 
-/*media queries*/
+/*--------------------------------------------hero styles*/
+
+.hero
+{
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    height: 100px;
+    position: relative;
+}
+
+.hero div
+{
+    background-color: var(--accent);
+    width: 190px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    text-align: center;
+}
+
+.hero h2
+{
+    color: var(--dark);
+    margin: 4px;
+    font-size: 20px;
+}
+
+
+/*--------------------------------------------media queries*/
 
 @media screen and (min-width: 980px)
 {
