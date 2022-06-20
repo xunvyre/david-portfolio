@@ -17,7 +17,7 @@
 
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: var(--light);
     background-color: var(--mid);
 }
@@ -31,7 +31,6 @@ header
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     top: 0;
 }
 
@@ -59,11 +58,13 @@ header nav ul
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-right: 20px;
 }
 
 header nav ul li a
 {
-    margin: 10px 15px;
+    margin: 10px 4px;
+    padding: 5px;
     font-size: 14px;
     color: var(--light);
     text-decoration: none;
@@ -98,13 +99,59 @@ header nav ul li a
     font-size: 20px;
 }
 
+/*--------------------------------------------section styles*/
+
+.body-section
+{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section-title
+{
+    text-align: right;
+    border-right: 3px solid var(--accent);
+    width: 25%;
+}
+
+.section-title h1
+{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.margin-right
+{
+    margin: 0 20px 0px 10px;
+}
+
+.description
+{
+    flex: 1;
+}
 
 /*--------------------------------------------media queries*/
 
 @media screen and (min-width: 980px)
 {
+
+}
+
+@media screen and (min-width: 768px)
+{
     header div
     {
-        width: 342px; /*the width of the box @979 pixels*/
+        width: 268px; /*the width of the box @767 pixels*/
+    }
+
+    header nav ul 
+    {
+        margin-right: 45px;
+    }
+
+    .section-title
+    {
+        width: 189px;
     }
 }
