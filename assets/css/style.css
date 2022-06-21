@@ -71,6 +71,11 @@ header nav ul li a
     border-bottom: 3px solid;
 }
 
+header nav ul li a:hover
+{
+    color: var(--accent);
+}
+
 /*--------------------------------------------hero styles*/
 
 .hero
@@ -143,19 +148,21 @@ header nav ul li a
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-left: 5px;
+    max-width: 100%;
 }
 
 .previews div
 {
     border: 3px solid var(--accent);
     background-color: var(--accent);
+    color: var(--mid);
     width: 400px;
     height: 200px;
     margin: 5px;
     position: relative;
     overflow: hidden;
-
 }
 
 .previews div div
@@ -163,10 +170,26 @@ header nav ul li a
     width: fit-content;
     height: fit-content;
     padding: 5px;
+    margin: 0;
     position: absolute;
     left: 0;
-    bottom: 15px;
+    bottom: 10px;
+    z-index: 10;
+}
 
+.previews div div p
+{
+    font-size: 10px;
+}
+
+.previews div a img
+{
+    opacity: 0.75;
+}
+
+.previews div a img:hover
+{
+    opacity: 1.0;
 }
 
 /*--------------------------------------------media queries*/
