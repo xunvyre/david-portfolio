@@ -200,6 +200,33 @@ header nav ul li a:hover
     opacity: 1.0;
 }
 
+/*--------------------------------------------contact me styles*/
+
+.contact-info ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.contact-info ul li a
+{
+    margin: 10px 2px;
+    padding: 5px;
+    font-size: 14px;
+    color: var(--light);
+    text-decoration: none;
+    border-bottom: 3px solid;
+}
+
+.contact-info ul li a:hover
+{
+    color: var(--accent);
+}
+
 /*--------------------------------------------media queries*/
 
 @media screen and (min-width: 768px)
@@ -228,6 +255,12 @@ header nav ul li a:hover
     {
         width: 34.4vw;
     }
+    
+    .contact-info ul li a
+    {
+        margin: 10px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 980px)
@@ -241,4 +274,25 @@ header nav ul li a:hover
     {
         width: 36.95vw;
     }
+}
+
+/*--------------------------------------------resume page*/
+
+header div h1 a
+{
+    text-decoration: none;
+    color: var(--dark)
+}
+
+body a /*placeholder*/
+{
+    color: var(--light);
+    text-decoration: none;
+}
+
+body a span /*placeholder*/
+{
+    color: var(--dark);
+    text-decoration: underline;
+    font-weight: bolder;
 }
