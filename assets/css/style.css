@@ -82,6 +82,7 @@ header nav ul li a:hover
 {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
+    background-position: 25% 32%;
     height: 100px;
     position: relative;
 }
@@ -153,7 +154,7 @@ header nav ul li a:hover
     max-width: 100%;
 }
 
-.previews div
+.previews a
 {
     border: 3px solid var(--accent);
     background-color: var(--accent);
@@ -166,7 +167,7 @@ header nav ul li a:hover
     overflow: hidden;
 }
 
-.previews div aside
+.previews a div aside
 {
     width: fit-content;
     height: fit-content;
@@ -179,25 +180,50 @@ header nav ul li a:hover
     z-index: 10;
 }
 
-.previews div:first-child
+.previews a:first-child
 {
     height: 400px;
     width: 400px;
 }
 
-.previews div aside p
+.previews a div aside p
 {
     font-size: 10px;
 }
 
-.previews div a img
+.previews a div img
 {
     opacity: 0.75;
+    width: 100%;
 }
 
-.previews div a img:hover
+.previews a div img:hover
 {
     opacity: 1.0;
+}
+
+/*--------------------------------------------resume styles*/
+.resume
+{
+    border-top: 5px dotted var(--dark);
+    padding-top: 15px;
+}
+
+.resume-blurbs
+{
+    flex-wrap: wrap;
+}
+
+.resume-blurbs div:not(:first-child)
+{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 3px solid var(--accent);
+}
+
+.resume-blurbs p
+{
+    margin-top: 15px;
 }
 
 /*--------------------------------------------contact me styles*/
@@ -206,15 +232,17 @@ header nav ul li a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 10px 20px;
+}
+
+.contact-info ul li
+{
+    padding: 10px 2px;
 }
 
 .contact-info ul li a
 {
-    margin: 10px 2px;
     padding: 5px;
     font-size: 14px;
     color: var(--light);
@@ -246,12 +274,12 @@ header nav ul li a:hover
         width: 189px;
     }
 
-    .previews div:first-child
+    .previews a:first-child
     {
         width: 70vw;
     }
 
-    .previews div
+    .previews a
     {
         width: 34.4vw;
     }
@@ -265,12 +293,12 @@ header nav ul li a:hover
 
 @media screen and (min-width: 980px)
 {
-    .previews div:first-child
+    .previews a:first-child
     {
         width: 75vw;
     }
 
-    .previews div 
+    .previews a 
     {
         width: 36.95vw;
     }
